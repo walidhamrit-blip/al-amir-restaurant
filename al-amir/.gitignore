@@ -1,0 +1,8 @@
+# Dependencies & build output
+node_modules/
+.next/
+out/
+
+# Local secrets & demo data (see lib/store.js)
+.env*.local
+data/*.json

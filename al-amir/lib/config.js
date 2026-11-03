@@ -26,4 +26,12 @@ export const restaurant = {
     ],
   },
   orderUrl: '#',           // external ordering platform link (Talabat, etc.)
+
+  // Agency credit badge displayed at the very bottom of the footer.
+  // The footer is dark teal, so we use the "light" version of the official badge.
+  credit: {
+    href: 'https://nokhba.net.ly/badge',
+    image: 'https://nokhba.net.ly/badge/nukhba-badge-light.svg',
+    alt: 'نخبة | Website by Nukhba',
+  },
 };

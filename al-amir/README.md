@@ -38,6 +38,9 @@ npm run build && npm start   # production
 - Clé par défaut : `amir2026` — à changer via `ADMIN_KEY` dans `.env.local` (voir `.env.example`)
 - Fonctions : liste des demandes de réservation, filtres, **Confirmer / Annuler**, liste des commandes de cartes-cadeaux
 
+## Crédit agence (badge Nukhba)
+Le bas du pied de page affiche la [شارة « Website by Nukhba »](https://nokhba.net.ly/badge) : lien visible vers `https://nokhba.net.ly/badge`, image officielle (variante *light*, adaptée au fond sombre du footer), `rel="sponsored nofollow noopener"`, texte alternatif et libellé bilingues. L'URL et l'image sont dans `lib/config.js` (`restaurant.credit`) ; le balisage est dans `components/Footer.jsx` et le style dans `app/globals.css` (`.footer .credit`). Le badge est facultatif : pour le retirer, supprimer simplement le bloc `.credit` du Footer.
+
 ## Aller en production
 - Remplacer les images dans `public/images/`
 - Mettre le vrai lien de commande (`orderUrl`) et les réseaux dans `lib/config.js`

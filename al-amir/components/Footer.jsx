@@ -34,6 +34,26 @@ export default function Footer({ locale, t }) {
         </div>
         <div className="copy">{t.footer.copyright} {year} <span style={{ padding: '0 0.8rem' }}>|</span> {restaurant.name[locale]} · {t.footer.rights}</div>
         <p className="disclaimer"><b>{t.footer.seoTitle}</b><br />{t.footer.seoText}</p>
+        <div className="credit">
+          <a
+            className="credit-badge"
+            href={restaurant.credit.href}
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            title="نخبة"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={restaurant.credit.image}
+              alt={restaurant.credit.alt}
+              width="176"
+              height="44"
+              loading="lazy"
+              decoding="async"
+            />
+            <span>نخبة · Website by Nukhba</span>
+          </a>
+        </div>
       </div>
     </footer>
   );
